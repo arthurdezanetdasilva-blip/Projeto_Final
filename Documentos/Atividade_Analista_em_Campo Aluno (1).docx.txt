@@ -1,0 +1,100 @@
+﻿ANÁLISE DE SISTEMAS
+Atividade Prática em Aula
+Exercício: Analista em Campo
+	
+
+DURAÇÃO
+30 minutos
+	FORMATO
+Individual, com discussão em turma
+	Contexto
+O professor distribui um formulário impresso de cadastro ou venda — pode ser real ou fictício (nota fiscal, ficha de paciente, ordem de serviço, entre outros). A partir da leitura cuidadosa desse documento, cada aluno assume o papel de analista de sistemas e deve extrair, sozinho, as informações que normalmente seriam levantadas em uma entrevista com o cliente.
+O que você deve fazer
+1
+	Analisar o documento
+Observe o formulário com atenção e liste todos os campos identificados (nome, data, código, assinatura, valores, etc.).
+	
+
+2
+	Justificar cada campo
+Para cada campo listado, responda: Por que esse dado é coletado? Para que serve?
+	
+
+3
+	Extrair requisitos funcionais
+A partir do documento, escreva pelo menos 5 requisitos funcionais do sistema.
+	
+
+4
+	Identificar regras de negócio
+Encontre pelo menos 2 regras de negócio implícitas no documento (condições, restrições, cálculos, validações).
+	________________
+
+
+1. Campos do documento
+Liste abaixo todos os campos encontrados no formulário e justifique cada um.
+Campo identificado
+	Por que esse dado é coletado?
+	Para que serve?
+	 Nome completo
+	 Para identificar o paciente.
+	 Permitir localizar e registrar o paciente no sistema.
+	 CPF
+	 Para confirmar a identidade e evitar cadastros duplicados.
+	 Identificação única do paciente.
+	 Data de nascimento
+	 Para conhecer a idade do paciente.
+	 Auxiliar no atendimento e no cadastro.
+	 Telefone
+	 Para manter contato com o paciente.
+	 Confirmar consultas e enviar avisos.
+	 E-mail
+	 Para comunicação eletrônica.
+	 Enviar confirmações e resultados de exames.
+	 Convênio
+	 Para informar o plano de saúde.
+	 Verificar a cobertura do atendimento.
+	 Data da consulta
+	 Para registrar quando ocorrerá o atendimento.
+	 Organizar a agenda da clínica.
+	
+
+Escreva pelo menos 5 requisitos funcionais identificados a partir do documento analisado.
+1.
+	 RF-01 – O sistema deve permitir cadastrar pacientes com seus dados pessoais.
+	2.
+	 RF-02 – O sistema deve permitir agendar consultas informando data, horário e médico responsável.
+	3.
+	 RF-03 – O sistema deve permitir consultar os dados dos pacientes cadastrados.
+	4.
+	 RF-04 – O sistema deve permitir editar as informações do cadastro dos pacientes.
+	5.
+	 RF-05 – O sistema deve permitir cancelar consultas agendadas.
+	3. Regras de negócio implícitas
+Identifique pelo menos 2 regras de negócio que o documento sugere, mesmo sem estarem escritas explicitamente.
+1.
+	 RN-01 – Não é permitido cadastrar dois pacientes com o mesmo CPF.
+	2.
+	 RN-02 – Um médico não pode atender dois pacientes no mesmo horário.
+	💬  Discussão em turma
+Quais requisitos apareceriam numa entrevista com o cliente? Quais só aparecem quando analisamos o documento em detalhe?
+Espaço para anotações da discussão:
+ Cadastro de pacientes. 
+Agendamento de consultas. 
+Consulta aos dados dos pacientes. 
+Alteração do cadastro. 
+Cancelamento de consultas. 
+Quais só aparecem quando analisamos o documento em detalhe?
+O CPF deve ser único. 
+É necessário registrar a data da consulta. 
+É obrigatório informar o médico responsável. 
+Deve existir um campo para observações. 
+O sistema deve impedir consultas duplicadas no mesmo horário. 
+Alguns campos do cadastro são obrigatórios para concluir o registro.
+
+
+ 
+ 
+	
+
+CFP SENAI Cypriano Micheletto  •  Técnico em Desenvolvimento de Sistemas  •  Análise de Sistemas

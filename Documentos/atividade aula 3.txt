@@ -1,0 +1,154 @@
+﻿Exercícios  Ciclo de Vida de Software
+Parte 1  Questões conceituais
+1. O que é o Ciclo de Vida de um Software e por que ele é necessário?
+O Ciclo de Vida de Software é o conjunto de etapas que um sistema passa desde a ideia inicial até sua manutenção após ser entregue. Ele é necessário para organizar o desenvolvimento, reduzir erros, controlar custos, garantir qualidade e atender às necessidades do cliente.
+
+
+2. Qual a diferença entre as fases de levantamento e análise? Por que são etapas separadas?
+No levantamento são coletadas as necessidades do cliente por meio de entrevistas, reuniões e observações. Já na análise essas informações são estudadas para verificar sua viabilidade, identificar possíveis problemas e definir os requisitos do sistema de forma organizada.
+São etapas separadas porque primeiro é preciso entender o que o cliente deseja e depois analisar essas informações antes de iniciar o desenvolvimento.
+3. Por que os testes são considerados uma fase crítica? O que pode acontecer se forem realizados de forma superficial?
+Os testes garantem que o sistema funcione corretamente antes de ser entregue ao cliente. Se forem feitos de maneira superficial, erros podem passar despercebidos, causando falhas, perda de dados, prejuízos financeiros e insatisfação dos usuários.
+4. Explique o que acontece na implantação e quais cuidados especiais essa etapa exige.
+Na implantação o sistema é instalado e colocado em funcionamento no ambiente do cliente. Nessa etapa é importante fazer backup dos dados, treinar os usuários, verificar se tudo está funcionando corretamente e acompanhar os primeiros dias de uso para corrigir possíveis problemas.
+
+
+
+
+
+
+5. O que é manutenção de software? Quais são os três tipos de manutenção e quando cada um ocorre?
+A manutenção é a fase em que o software recebe correções, melhorias e adaptações após sua entrega.
+Manutenção corretiva: corrige erros encontrados após o sistema entrar em uso.
+Manutenção adaptativa: adapta o sistema a novas tecnologias, leis ou mudanças no ambiente.
+Manutenção evolutiva: adiciona novas funcionalidades e melhorias solicitadas pelos usuários.
+6. Por que a regra "quanto mais cedo o erro é descoberto, menor o custo" é considerada fundamental?
+Porque corrigir um erro nas primeiras fases do projeto é muito mais simples e barato. Quando o problema é descoberto apenas depois da entrega, pode ser necessário modificar várias partes do sistema, aumentando o tempo, o custo e os riscos.
+
+
+Parte 2  Ordenação e justificativa
+2.1 Ordem correta
+Levantamento,Análise,Projeto,Desenvolvimento ,Testes,Implantação Manutenção
+2.2 Associação das etapas
+Etapa
+	O que acontece nessa fase?
+	Quem é o principal responsável?
+	Levantamento
+	Coleta das necessidades e objetivos do cliente.
+	Analista de Sistemas e cliente.
+	Análise
+	Organização e definição dos requisitos do sistema.
+	Analista de Sistemas.
+	Projeto
+	Planejamento da arquitetura, banco de dados e interfaces.
+	Analista e arquiteto de software.
+	Desenvolvimento
+	Programação e construção do sistema.
+	Programadores.
+	Testes
+	Verificação do funcionamento e correção de falhas.
+	Equipe de testes e desenvolvedores.
+	Implantação
+	Instalação do sistema e treinamento dos usuários.
+	Equipe de implantação e suporte.
+	Manutenção
+	Correções, adaptações e melhorias após a entrega.
+	Equipe de manutenção/desenvolvimento.
+	
+
+Parte 3 Estudo de caso
+1. Em quais fases os problemas provavelmente se originaram?
+Os problemas começaram principalmente nas fases de levantamento, análise e testes.
+Levantamento: não foram identificadas todas as necessidades da loja.
+Análise: os requisitos não foram organizados nem avaliados corretamente.
+Testes: falhas importantes não foram identificadas antes da entrega.
+2. Quais requisitos claramente não foram levantados?
+Cálculo correto de descontos.
+Atualização automática do estoque em tempo real.
+Relatórios de vendas por vendedor.
+Integração com o sistema fiscal da loja.
+
+
+3. Como uma fase de testes bem estruturada poderia ter evitado parte do problema?
+Os testes verificariam se os descontos estavam corretos, se o estoque era atualizado automaticamente, se os relatórios funcionavam e se a integração com o sistema fiscal estava funcionando antes da entrega. Assim, esses erros poderiam ser corrigidos antecipadamente.
+
+
+4. O que deveria ser feito agora na fase de manutenção?
+A equipe deve identificar os erros, corrigir o cálculo de descontos, implementar os relatórios, desenvolver a integração fiscal, corrigir o controle de estoque, realizar novos testes e liberar uma atualização para o cliente.
+5. O que o analista de sistemas deveria ter feito diferente?
+O analista deveria ter realizado um levantamento completo dos requisitos, documentado todas as necessidades do cliente, validado essas informações antes da programação, acompanhado o desenvolvimento e planejado testes completos antes da implantação.
+
+
+
+
+
+
+Parte 4  Comparação de modelos de desenvolvimento
+Projeto A
+Modelo recomendado: Cascata.
+Justificativa: Os requisitos são simples, bem definidos e dificilmente sofrerão alterações. O modelo Cascata funciona bem quando todas as etapas podem ser planejadas desde o início.
+
+
+Projeto B
+Modelo recomendado: Ágil.
+Justificativa: Como os clientes ainda não sabem exatamente quais funcionalidades desejam, o modelo Ágil permite desenvolver aos poucos, receber feedback constante e adaptar o sistema conforme as necessidades surgirem.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Parte 5 Desafio prático
+Sistema escolhido: Sistema de biblioteca escolar.
+Etapa
+	O que seria feito nessa fase?
+	Duração estimada
+	Levantamento
+	Conversar com bibliotecários e direção para identificar as necessidades do sistema.
+	1 semana
+	Análise
+	Definir requisitos, regras de empréstimo e funcionalidades do sistema.
+	1 semana
+	Projeto
+	Planejar banco de dados, telas e estrutura do sistema.
+	2 semanas
+	Desenvolvimento
+	Programar cadastro de livros, alunos, empréstimos e devoluções.
+	5 semanas
+	Testes
+	Testar todas as funções e corrigir erros encontrados.
+	2 semanas
+	Implantação
+	Instalar o sistema na escola e treinar os funcionários.
+	1 semana
+	Manutenção
+	Corrigir problemas e adicionar melhorias conforme necessário.
+	Contínua

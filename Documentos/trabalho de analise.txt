@@ -1,0 +1,97 @@
+﻿Parte 1 — Questões conceituais 
+1. Qual é o papel principal do analista de sistemas? Por que ele é frequentemente descrito como uma "ponte"?
+O principal trabalho dele é entender o que a empresa precisa, quais são os seus problemas e depois organizar tudo isso para escolher ou criar uma solução que funcione de verdade. Ele é chamado de “ponte” porque liga quem usa os sistemas donos, funcionários e gerentes  com quem vai desenvolver ou configurar as ferramentas. Basicamente, ele explica o que a empresa precisa em uma linguagem que os profissionais de tecnologia entendem, e vice-versa.
+2. Por que o analista precisa ter habilidades de comunicação mesmo sendo um profissional de TI? Dê um exemplo de consequência negativa quando essa habilidade falta.
+Porque ele conversa com pessoas de várias áreas, que na maioria das vezes não sabem termos técnicos. Se ele não souber ouvir e explicar bem, pode entender errado o que a empresa quer. Um exemplo: se ele não conversar direito com quem cuida do estoque, pode indicar um sistema que não controla a validade dos produtos, fazendo com que mercadorias estraguem e causem prejuízo.
+3. Qual a diferença entre um sistema ERP e um sistema CRM? Dê um exemplo de uso real de cada um.
+* ERP: Ele junta e organiza todas as atividades da empresa em um só lugar — estoque, compras, vendas, finanças, produção e até o controle de funcionários. Exemplo: Em uma fábrica, quando chega um pedido, ele já confere se tem matéria-prima, avisa a produção e calcula os custos sozinho.
+* CRM: Foca apenas no relacionamento com os clientes. Guarda os dados deles, o que já compraram e como foi o atendimento. Exemplo: Uma loja usa para lembrar o que cada cliente costuma levar e avisar quando tem promoção do seu interesse.
+4. Para que serve um sistema de BI (Business Intelligence)? Que tipo de decisão ele apoia?
+Ele pega todos os dados que a empresa produz, organiza e transforma em informações fáceis de ler e entender. Com ele, dá para tomar decisões mais seguras, como saber quais produtos dão mais lucro, em quais épocas vende mais ou onde vale a pena investir.
+5. Explique a diferença entre um modelo de negócio B2B e um B2C. Por que essa distinção importa para o analista de sistemas?
+* B2B: É a venda feita de uma empresa para outra. Por exemplo, uma fábrica que vende mercadorias para uma rede de supermercados.
+* B2C: É a venda direta para a pessoa que vai usar o produto, como quando você compra algo no supermercado para o seu uso.
+* Isso faz toda a diferença porque muda as regras do negócio: no B2B os pedidos são maiores e com mais tempo para pagar; no B2C o atendimento é mais rápido e tem muito mais clientes. O analista precisa saber disso para indicar um sistema que sirva exatamente para aquele tipo de trabalho.
+Reflexão Que perguntas fazer diante da demanda "Quero um sistema de gestão completo"?
+* Qual o ramo de atividade e o tamanho da empresa?
+* Quais são as maiores dificuldades que vocês têm hoje?
+* Quantas pessoas vão usar o sistema ao mesmo tempo?
+* Quanto vocês podem investir e pagar mensalmente?
+* Quais áreas precisam ser resolvidas primeiro?
+* A empresa tem computadores e internet com qualidade suficiente?
+
+
+Parte 2 — Relacione os sistemas às descrições
+Tabela
+Tipo de sistema
+	Descrição com suas palavras
+	Exemplo real
+	ERP
+	Junta todas as operações da empresa em um único lugar, para que todos usem as mesmas informações e não haja confusão.
+	TOTVS Protheus, SAP Business One
+	CRM
+	Guarda todos os dados dos clientes e ajuda a atender melhor, acompanhar seus pedidos e manter um bom relacionamento.
+	Salesforce, RD Station CRM
+	BI
+	Pega os números da empresa, organiza e mostra em gráficos e relatórios para ajudar a entender como o negócio está indo.
+	Power BI, Tableau
+	SPT
+	Controla as tarefas do dia a dia, como registrar vendas, dar entrada em mercadorias e conferir pagamentos.
+	Sistema de caixa de supermercado, controle simples de estoque
+	SIG
+	Usa os dados do dia a dia para criar relatórios que ajudam o dono a ver se a empresa está indo bem ou não.
+	Módulos de relatórios que já vêm junto com sistemas de gestão
+	SAD
+	Permite testar diferentes situações antes de decidir algo importante, como “se eu aumentar o preço, como fica a venda?”.
+	Ferramentas que simulam resultados e cenários
+	MRP
+	Controla quanto de material é preciso para produzir, evitando que falte ou que fique muito estoque parado.
+	Parte de gestão de produção dentro de sistemas para indústrias
+	B2B
+	Não é um sistema, mas sim um jeito de trabalhar: vendas feitas entre empresas.
+	Compra de couro por uma fábrica de calçados
+	B2C
+	Modelo de negócio onde a venda é feita direto para quem vai usar o produto.
+	Compra de um par de sapatos em uma loja
+	
+
+Parte 3 — Estudo de caso
+1. Quais tipos de sistemas resolveriam os problemas? Justifique:
+* SPT: Vai substituir as planilhas e as anotações feitas à mão, registrando os pedidos, controlando o estoque e emitindo as notas fiscais automaticamente.
+* ERP: Liga todos os setores da empresa. Assim que chega um pedido, a produção, o estoque e o financeiro já ficam sabendo na hora, sem atrasos.
+* BI: Analisa quanto custa produzir e quanto cada modelo vende, mostrando claramente quais dão mais lucro.
+* CRM: Organiza os dados de cada cliente, o que ele pediu e o prazo de entrega, facilitando o contato e evitando erros.
+2. Onde o ERP ajudaria especificamente?
+Ele faz tudo funcionar conectado: ao receber um pedido, já verifica se tem matéria-prima, avisa a equipe da produção, calcula o custo e gera a nota fiscal sozinho. Acaba com a demora de passar informação de um setor para o outro.
+3. Onde o CRM poderia ser útil?
+Para cadastrar cada cliente, anotar tudo o que ele já comprou, os valores combinados e a data de entrega. Assim, fica fácil consultar e avisá-lo rapidamente se houver qualquer mudança.
+4. Que informações o BI forneceria?
+Mostra quanto de lucro dá cada modelo de calçado, quanto custa cada material, em quais meses vende mais e quais clientes compram com mais frequência. Isso ajuda a decidir o que vale a pena produzir mais e onde economizar.
+5. Que informações levantar antes de indicar o sistema?
+* Como funciona cada processo da empresa hoje?
+* Quanto podem gastar com a compra e com a manutenção mensal?
+* Os computadores e a internet da empresa são bons o suficiente?
+* Os funcionários têm facilidade para aprender a usar novas ferramentas?
+* Quais problemas precisam ser resolvidos com mais urgência?
+[Desafio] Como argumentar com o cliente que quer "o melhor ERP do mercado"?
+Eu explicaria assim: “O melhor sistema não é o mais caro ou o mais famoso, e sim o que resolve o que você precisa. Se escolher um muito completo, ele vai ter funções que você nunca vai usar, vai custar mais caro para manter e pode ser mais difícil de aprender. Vamos escolher algo que atenda o que você precisa hoje e que possa crescer junto com a fábrica, sem gastar dinheiro à toa.”
+
+
+ Parte 4 — Análise de empresa real
+Empresa: Padaria Pão Fresco
+Setor: Alimentação e comércio varejista
+Tabela
+Sistema recomendado
+	Por que esse sistema? Que problema resolve?
+	1. SPT de caixa e estoque
+	Controla quanto foi vendido no dia e quanto tem de ingredientes, evitando faltas, perdas e contas erradas.
+	2. SIG
+	Mostra relatórios simples de quanto vendeu por dia e horário, ajudando a saber quando é preciso produzir mais.
+	3. CRM
+	Cadastra os clientes que compram sempre, lembra o que eles gostam e ajuda a avisar quando tem novidade ou promoção.
+	4. BI básico
+	Mostra quais produtos vendem mais e dão mais lucro, ajudando a decidir o que manter ou mudar no cardápio.
+	
+
+Parte 5 — Questão dissertativa
+Para a clínica odontológica, eu indicaria primeiro um sistema de gestão para consultórios, depois um sistema que ajude a administrar o negócio e, com o tempo, ferramentas de análise. Começar pela gestão é o mais importante, pois vai substituir tudo o que é feito em papel e por telefone: ele organiza os agendamentos, guarda o histórico dos pacientes, controla os pagamentos e deixa o atendimento mais rápido e seguro. Sem ele, não temos dados confiáveis para trabalhar. Depois, o sistema de gestão ajuda a ver quanto a clínica está faturando e quais horários são mais procurados. Mais para frente, com mais informações, dá para usar ferramentas de análise para entender melhor como funciona o dia a dia da clínica. Essa ordem segue a lógica de resolver primeiro o que é mais necessário para o trabalho diário.

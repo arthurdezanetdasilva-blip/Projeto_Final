@@ -1,0 +1,172 @@
+﻿Casos de Uso — Sistema de Gestão Escolar
+TÉCNICO EM INFORMÁTICA · ANÁLISE DE SISTEMAS
+Roteiro e Modelo — Casos de Uso
+Sistema de Gestão Escolar
+Aula 4 · 4 horas · o professor é o cliente
+
+
+Onde isto se encaixa
+Os casos de uso traduzem os requisitos do DLR em uma visão de quem usa o sistema e o que cada um faz. É a ponte entre o levantamento de requisitos (Aula 3) e a prototipação das telas (Aula 5).
+Todos os grupos trabalham o mesmo sistema, mas cada grupo conduz a sua própria modelagem e entrega o seu protótipo navegável.
+	
+
+Documento guia + modelo · uso do instrutor e dos alunos
+________________
+
+
+Sumário
+
+
+
+
+________________
+
+
+1. Objetivo
+Modelar o Sistema de Gestão Escolar em casos de uso: identificar os atores, descobrir as funcionalidades que o sistema oferece a eles, desenhar o diagrama de casos de uso e detalhar os casos centrais. O resultado orienta diretamente a prototipação das telas na próxima aula.
+2. Conceitos essenciais
+Conceito
+	O que é
+	Ator
+	Pessoa, sistema ou dispositivo externo que interage com o sistema. Ator primário inicia a interação; ator secundário apoia.
+	Caso de uso
+	Uma funcionalidade completa que entrega valor a um ator. Nomeado com verbo no infinitivo + objeto: “Cadastrar disciplina”, “Gerar cronograma”.
+	Associação
+	A linha que liga um ator a um caso de uso que ele utiliza.
+	«include»
+	Comportamento obrigatório e reutilizado: um caso de uso sempre executa outro. Ex.: “Gerar cronograma” «include» “Validar conflito de professor”.
+	«extend»
+	Comportamento opcional ou condicional que estende outro caso em uma situação específica.
+	Fronteira do sistema
+	O retângulo que separa o que é interno (casos de uso) do que é externo (atores).
+	3. Do DLR ao caso de uso
+Você não parte do zero: os casos de uso nascem do que já está no Documento de Levantamento de Requisitos. Use estas equivalências como ponto de partida:
+* Atores saem da seção de Stakeholders e atores do DLR.
+* Casos de uso saem dos requisitos funcionais — em geral, cada RF vira (ou se agrupa em) um caso de uso.
+* Regras de negócio aparecem dentro dos fluxos e como relações «include» / «extend».
+
+
+Exemplo de mapeamento (apenas ilustrativo — cada grupo monta o seu):
+RF (DLR)
+	Caso de uso
+	Observação
+	RF02
+	Cadastrar professor
+	Ator: Coordenador.
+	RF04
+	Gerar cronograma
+	«include» “Validar conflito de professor” (regra RN03).
+	
+
+4. Processo — passo a passo (aula de 4 horas)
+Sugestão de condução para o bloco de 4 horas. Ajuste os tempos conforme a turma.
+Tempo
+	Atividade
+	Etapa
+	50 min
+	Teoria: atores, casos de uso, relações e diagrama.
+	—
+	50 min
+	Identificar atores e casos de uso a partir do DLR.
+	Etapas 1 e 2
+	60 min
+	Desenhar o diagrama de casos de uso na ferramenta.
+	Etapa 3
+	15 min
+	Intervalo.
+	—
+	50 min
+	Detalhar 2 a 3 casos de uso centrais nas fichas.
+	Etapa 4
+	25 min
+	Validar com o cliente e ajustar.
+	Etapa 5
+	  ETAPA 1    Identificar os atores
+Pergunte: quem usa o sistema? Quem inicia cada ação? Há outro sistema envolvido? Liste os atores e classifique em primário e secundário.
+  ETAPA 2    Identificar os casos de uso
+Para cada requisito funcional do DLR, descreva a funcionalidade como um caso de uso (verbo + objeto). Agrupe ações muito pequenas e separe o que entrega valores diferentes.
+  ETAPA 3    Desenhar o diagrama
+Posicione os atores fora da fronteira e os casos de uso dentro. Ligue cada ator aos seus casos e acrescente as relações «include» e «extend» onde fizer sentido.
+  ETAPA 4    Detalhar os casos de uso centrais
+Escolha os 2 a 3 casos mais importantes (ex.: “Gerar cronograma”) e preencha a ficha de descrição (Seção 7), com fluxo principal, alternativos e exceções.
+  ETAPA 5    Validar com o cliente
+Mostre o diagrama ao cliente (professor) e confirme se reflete o que foi pedido. Ajuste o que estiver faltando ou sobrando.
+5. Boas práticas e erros comuns
+Faça assim
+	Evite
+	Nomear com verbo + objeto: “Cadastrar disciplina”.
+	Nomes de tela: “Tela de disciplina”.
+	Caso de uso = funcionalidade que entrega valor.
+	Modelar cada clique ou passo isolado como um caso.
+	Usar “Manter X” quando incluir, alterar e excluir formam um conjunto.
+	Quatro casos de CRUD separados quando não agregam clareza.
+	«include» quando sempre acontece; «extend» quando é condicional.
+	Trocar include por extend (e vice-versa).
+	Deixar detalhes de tela para o protótipo (Aula 5).
+	Desenhar telas dentro do diagrama de casos de uso.
+	6. Entrega do diagrama
+COMO PREENCHER
+Construa o diagrama em uma ferramenta de modelagem (draw.io / diagrams.net, Astah, Lucidchart ou StarUML) e insira a imagem aqui, ou anexe o arquivo.
+O diagrama deve conter: a fronteira do sistema, todos os atores identificados, os casos de uso e as relações entre eles.
+	 ESSE2 
+
+
+
+
+
+7. Modelo — ficha de descrição de caso de uso
+Preencha uma ficha para cada caso de uso central. Copie a tabela quantas vezes precisar.
+Identificador e nome
+	Arthur Dezanet da silva
+	Descrição (1 frase)
+	Professor registra notas dos alunos no sistema
+	Ator(es)
+	Professor
+	Pré-condições
+	professor logado e turma criada
+	COMO PREENCHER
+No fluxo principal, numere os passos da interação bem-sucedida entre o ator e o sistema, alternando “o ator faz...” / “o sistema responde...”.
+	Fluxo principal
+	1.Professor acessa o sistema
+2.Seleciona a turma
+3.Seleciona o aluno 
+4.Insere a nota
+5.Sistema salva a nota
+	COMO PREENCHER
+Fluxos alternativos: caminhos válidos diferentes do principal. Exceções: o que dá errado e como o sistema reage (ex.: conflito de professor detectado).
+	Fluxos alternativos
+	Exceções
+	Professor corrige nota antes de salvar
+	  Nota fora do intervalo (0 a 10) é rejeitada   Pós-condições: nota registrada 
+ Regras de negócio: nota entre 0 e 10 
+ RF atendido: RF05
+
+
+	Pós-condições
+	Nota registrada com sucesso no sistema
+	Regras de negócio relacionadas
+	 As notas devem estar obrigatoriamente entre 0 e 10 
+ O sistema não permite salvar notas inválidas
+
+
+	Requisitos atendidos (RF)
+	RF05 — Lançamento de notas
+	8. Checklist de qualidade
+* Todo ator do diagrama tem ao menos um caso de uso ligado a ele?
+* Sim, todos os atores possuem pelo menos um caso de uso associado no diagrama.
+* Todo requisito funcional do DLR está coberto por algum caso de uso?
+* Sim, todos os requisitos funcionais do DLR foram cobertos pelos casos de uso.
+* Os casos de uso têm nomes com verbo + objeto (não nomes de tela)?
+* Sim, os casos de uso estão nomeados corretamente com verbo + objeto (ex: “Cadastrar aluno”).
+* As relações «include» e «extend» foram usadas corretamente?
+* Sim, as relações «include» e «extend» foram usadas corretamente conforme regras do sistema.
+* Os casos centrais têm ficha com fluxo principal, alternativos e exceções?
+* Sim, os casos de uso centrais possuem fluxo principal, alternativos e exceções detalhadas.
+* Cada ficha aponta os requisitos (RF) e as regras de negócio (RN) atendidos?
+* Sim, cada ficha indica os requisitos (RF) e regras de negócio (RN) atendidos.
+* O diagrama foi validado com o cliente (professor)?
+* Sim, o diagrama foi validado com o cliente (professor).
+
+
+Análise de Sistemas · Casos de Uso — Sistema de Gestão Escolar
+Técnico em Informática        Página  de

@@ -1,0 +1,427 @@
+﻿Classificação
+Nº
+	Frase
+	Classificação
+	1
+	O sistema deve permitir que o gerente visualize o relatório de vendas do mês.
+	RF Requisito Funcional
+	2
+	Nenhum funcionário pode aprovar sua própria despesa.
+	RN Regra de Negócio
+	3
+	O sistema deve suportar até 1.000 usuários simultâneos.
+	RNF Requisito Não Funcional
+	4
+	Clientes com mais de 3 compras têm desconto automático de 5%.
+	RN Regra de Negócio
+	5
+	O sistema deve enviar um SMS ao cliente quando o pedido for enviado.
+	RF Requisito Funcional
+	6
+	A interface deve funcionar corretamente em telas de celular.
+	RNF (Requisito Não Funcional
+	
+
+
+
+
+
+Sistema de Clínica Veterinária
+Requisitos Funcionais RF
+RF-01 – O sistema deve permitir o cadastro de clientes com nome, CPF, telefone e e-mail.
+RF-02 – O sistema deve permitir o cadastro de animais com nome, espécie, raça, idade e histórico de vacinação.
+RF-03 – O sistema deve permitir o agendamento de consultas veterinárias.
+RF-04 – O sistema deve registrar o histórico de consultas e tratamentos dos animais.
+RF-05 – O sistema deve emitir comprovante de atendimento após a consulta.
+
+
+
+
+
+
+
+
+Requisitos Não Funcionais RNF
+RNF-01 – O sistema deve carregar qualquer tela em até 3 segundos.
+RNF-02 – O sistema deve funcionar corretamente nos navegadores Chrome, Firefox e Edge.
+RNF-03 – O sistema deve armazenar as senhas dos usuários utilizando criptografia.
+
+
+Regras de Negócio RN
+RN-01 – Consultas somente poderão ser canceladas com antecedência mínima de 2 horas.
+RN-02 – Apenas veterinários cadastrados poderão registrar diagnósticos e receitas.
+RN-03 – Um animal deve estar cadastrado antes de ser agendada uma consulta.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RF, RNF e Regras de Negócio
+Questões conceituais
+1. O que é um Requisito Funcional (RF)? Dê a definição e dois exemplos que não estejam no material da aula.
+Um Requisito Funcional (RF) descreve uma funcionalidade que o sistema deve executar, ou seja, define o que o sistema deve fazer.
+Exemplos:
+* RF-01: O sistema deve permitir que o usuário altere sua senha.
+* RF-02: O sistema deve emitir um comprovante em PDF após a conclusão de uma compra.
+
+
+2. O que é um Requisito Não Funcional (RNF)? Explique a diferença entre RNF de desempenho, segurança e usabilidade com um exemplo de cada.
+Um Requisito Não Funcional RNF define características de qualidade do sistema, como desempenho, segurança e facilidade de uso.
+Desempenho: determina a velocidade e capacidade do sistema.
+Exemplo: O sistema deve responder às consultas em até 2 segundos.
+Segurança: protege os dados e controla o acesso.
+Exemplo: O sistema deve exigir autenticação por senha para acessar informações dos usuários.
+Usabilidade: facilita o uso do sistema.
+Exemplo: O usuário deve conseguir cadastrar um produto em até 4 cliques.
+3. O que é uma Regra de Negócio? Por que ela não é uma funcionalidade do sistema, mas precisa estar documentada?
+Uma Regra de Negócio é uma norma ou política da empresa que o sistema deve respeitar. Ela não representa uma funcionalidade, mas determina como determinadas ações devem ocorrer. Deve ser documentada para garantir que o sistema siga corretamente as regras da organização.
+
+
+4. Por que os requisitos devem ser numerados e escritos no padrão "O sistema deve ? O que acontece quando os requisitos são vagos?
+Os requisitos devem ser numerados para facilitar sua organização, rastreamento e manutenção. O padrão "O sistema deve..." torna os requisitos claros e objetivos. Requisitos vagos podem gerar interpretações diferentes, causando erros no desenvolvimento e retrabalho.
+
+
+5. O que significa validar requisitos com o cliente? Por que isso deve acontecer antes do início do desenvolvimento?
+Validar requisitos significa confirmar com o cliente que tudo foi entendido corretamente. Isso evita desenvolver funcionalidades incorretas, reduz custos com mudanças e aumenta a satisfação do cliente.
+
+
+6. Reflexão
+A frase "Quero que o sistema seja seguro e rápido" não é um requisito válido porque é vaga e não pode ser medida. O analista deve conversar com o cliente para definir critérios objetivos, como tempo máximo de resposta e quais mecanismos de segurança serão utilizados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Classificação
+Item
+	Classificação
+	Justificativa
+	1
+	RF
+	Descreve uma funcionalidade do sistema.
+	2
+	RNF
+	Define compatibilidade com dispositivos.
+	3
+	RN
+	É uma política da empresa para vendas.
+	4
+	RF
+	O sistema executa a geração de relatórios.
+	5
+	RNF
+	Define um requisito de segurança.
+	6
+	RN
+	É uma regra comercial da empresa.
+	7
+	RNF
+	Define um requisito de desempenho.
+	8
+	RF
+	Descreve uma funcionalidade do sistema.
+	9
+	RN
+	Define uma política de autorização.
+	10
+	RNF
+	Define um requisito de confiabilidade/manutenção dos dados.
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Avaliação de qualidade
+Requisito original
+	Problema identificado
+	Requisito corrigido
+	O sistema deve ser rápido.
+	Vago e não mensurável.
+	O sistema deve carregar qualquer página em até 2 segundos.
+	O sistema deve ter segurança.
+	Muito genérico.
+	O sistema deve bloquear o acesso após 5 tentativas de login incorretas.
+	O sistema deve permitir cadastrar e editar e deletar e buscar clientes.
+	Possui várias funcionalidades em um único requisito.
+	RF-01: O sistema deve permitir cadastrar clientes.
+RF-02: O sistema deve permitir editar clientes.
+RF-03: O sistema deve permitir excluir clientes.
+RF-04: O sistema deve permitir pesquisar clientes.
+	O sistema deve ser amigável.
+	"Amigável" é subjetivo.
+	O sistema deve permitir concluir o cadastro de um cliente em até 5 minutos sem treinamento.
+	O sistema deve ter um bom relatório.
+	"Bom" é subjetivo.
+	O sistema deve gerar relatório de vendas contendo data, cliente, valor e forma de pagamento.
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Sistema de Biblioteca Escolar
+Requisitos Funcionais
+Código
+	Requisito Funcional
+	Prioridade
+	RF-01
+	O sistema deve permitir cadastrar alunos.
+	Alta
+	RF-02
+	O sistema deve permitir cadastrar livros.
+	Alta
+	RF-03
+	O sistema deve registrar empréstimos de livros.
+	Alta
+	RF-04
+	O sistema deve registrar devoluções de livros.
+	Alta
+	RF-05
+	O sistema deve calcular multas por atraso.
+	Alta
+	RF-06
+	O sistema deve permitir consultar a disponibilidade dos livros.
+	Média
+	RF-07
+	O sistema deve emitir relatório de empréstimos.
+	Média
+	RF-08
+	O sistema deve permitir renovar empréstimos.
+	Média
+	
+
+Requisitos Não Funcionais
+Código
+	Categoria
+	Requisito
+	RNF-01
+	Desempenho
+	O sistema deve responder às consultas em até 2 segundos.
+	RNF-02
+	Segurança
+	O sistema deve armazenar senhas criptografadas.
+	RNF-03
+	Usabilidade
+	O usuário deve realizar um empréstimo em até 3 minutos.
+	RNF-04
+	Compatibilidade
+	O sistema deve funcionar nos navegadores Chrome, Edge e Firefox.
+	RNF-05
+	Disponibilidade
+	O sistema deve permanecer disponível 99% do tempo.
+	
+
+
+
+
+
+
+
+Regras de Negócio
+Código
+	Regra
+	RN-01
+	Cada aluno pode retirar no máximo 3 livros simultaneamente.
+	RN-02
+	O prazo de empréstimo é de 7 dias.
+	RN-03
+	Alunos com multa pendente não podem realizar novos empréstimos.
+	RN-04
+	Livros de referência não podem ser emprestados.
+	RN-05
+	A multa será cobrada por dia de atraso na devolução.
+	
+
+Estudo de Caso- Academia
+Requisitos Funcionais
+Código
+	Requisito
+	Prioridade
+	RF-01
+	O sistema deve permitir cadastrar alunos.
+	Alta
+	RF-02
+	O sistema deve cadastrar planos de mensalidade.
+	Alta
+	RF-03
+	O sistema deve registrar pagamentos dos alunos.
+	Alta
+	RF-04
+	O sistema deve registrar entrada e saída dos alunos.
+	Alta
+	RF-05
+	O sistema deve permitir agendar aulas coletivas.
+	Média
+	RF-06
+	O sistema deve gerar relatórios de inadimplência, frequência e receita mensal.
+	Média
+	Requisitos Não Funcionais
+Código
+	Categoria
+	Requisito
+	RNF-01
+	Desempenho
+	O sistema deve responder em até 2 segundos.
+	RNF-02
+	Segurança
+	O sistema deve armazenar senhas criptografadas.
+	RNF-03
+	Disponibilidade
+	O sistema deve estar disponível 99% do tempo.
+	RNF-04
+	Compatibilidade
+	O sistema deve funcionar em computadores e celulares.
+	
+
+Regras de Negócio
+Código
+	Regra
+	RN-01
+	Alunos inadimplentes não podem agendar aulas coletivas.
+	RN-02
+	Cada aula possui número máximo de participantes.
+	RN-03
+	Apenas alunos com matrícula ativa podem registrar presença.
+	RN-04
+	O plano anual possui validade de 12 meses.
+	RN-05
+	O cancelamento de aulas deve ocorrer com pelo menos 2 horas de antecedência.
+	
+
+
+
+
+
+
+
+
+
+Questão dissertativa
+O requisito "O sistema deve ser seguro e funcionar bem" é problemático porque utiliza termos vagos e subjetivos, que podem ser interpretados de maneiras diferentes. Não é possível medir exatamente o que significa "seguro" ou "funcionar bem", dificultando o desenvolvimento e os testes. Uma forma correta de documentá-lo seria: RNF-01: O sistema deve bloquear o acesso após cinco tentativas consecutivas de login incorretas. RNF-02: O sistema deve carregar qualquer página em até dois segundos para até 500 usuários simultâneos. RF-01: O sistema deve permitir que o usuário altere sua senha quando desejar. Requisitos mal escritos podem gerar dúvidas na equipe de desenvolvimento, aumentar o retrabalho, dificultar a realização dos testes e causar conflitos com o cliente, pois não existe um critério claro para verificar se o sistema atende ao que foi solicitado. Por isso, os requisitos devem ser claros, objetivos, mensuráveis e sem ambiguidades.

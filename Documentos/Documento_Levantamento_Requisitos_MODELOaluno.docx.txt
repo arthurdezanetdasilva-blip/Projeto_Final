@@ -1,0 +1,279 @@
+﻿TÉCNICO EM INFOMÁTICA · ANÁLISE DE SISTEMAS
+Documento de Levantamento de Requisitos
+Sistema de Gestão Escolar
+
+
+Identificação
+Nome do sistema
+	Sistema de Gestão Escolar
+	Documento
+	Documento de Levantamento de Requisitos (DLR)
+	Equipe (integrantes)
+	Arthur Dezanet
+	Cliente
+	Professor (papel de cliente)
+	Curso / Disciplina
+	Técnico em Informática — Análise de Sistemas
+	Data
+	02/07/26
+	Versão
+	1.0
+	
+
+COMO PREENCHER
+Este é um modelo. Preencha cada seção substituindo os espaços em branco e as linhas pelo conteúdo que você levantar com o cliente.
+As caixas como esta, com a etiqueta “COMO PREENCHER”, são orientações: explicam o que escrever em cada parte. Você pode apagá-las na versão final do documento.
+	 
+
+
+Sumário
+ 
+
+
+Histórico de versões
+COMO PREENCHER
+Registre cada alteração relevante do documento: o número da versão, a data e um resumo do que mudou. A primeira linha costuma ser a versão inicial, criada após a entrevista e a validação com o cliente.
+	Versão
+	Data
+	Alterações
+	
+
+	
+
+	
+
+	1.0
+	01/07/2026
+	Versão inicial do documento
+	
+
+	
+
+	
+
+	1. Introdução
+1.1 Objetivo do documento
+COMO PREENCHER
+Explique, em poucas linhas, para que serve este documento: registrar e organizar os requisitos do sistema, servir de acordo entre a equipe e o cliente e orientar o desenvolvimento.
+	
+
+Este documento tem como objetivo registrar e organizar os requisitos do Sistema de Gestão Escolar, servindo como base para o desenvolvimento do software. Também estabelece um acordo entre o desenvolvedor e o cliente , garantindo que todas as funcionalidades e regras de negócio sejam compreendidas antes da implementação.
+
+
+1.2 Escopo
+COMO PREENCHER
+Descreva o que o sistema vai abranger (os módulos e funções principais que serão atendidos). Se for útil, indique também o que fica de fora desta versão.
+	O Sistema de Gestão Escolar será responsável por auxiliar a coordenação de uma instituição de ensino no gerenciamento de professores, semestres, disciplinas, feriados e cronogramas de aulas.
+O sistema permitirá o cadastro dessas informações, o cálculo automático dos custos das disciplinas e a emissão de relatórios administrativos.
+Nesta versão não serão desenvolvidos aplicativo para dispositivos móveis nem integração com outros sistemas.
+
+
+
+
+1.3 Definições, siglas e glossário
+COMO PREENCHER
+Liste os termos técnicos e do domínio que aparecem no documento, com uma definição curta. Ex.: hora-aula, cronograma, turno, RF, RNF, RN.
+	Termo / sigla
+	Definição
+	RF
+	Requisito Funcional
+	RNF
+	Requisito Não Funcional
+	RN
+	Regra de Negócio
+	Hora-aula
+	Valor pago ao professor por cada hora ministrada
+	1.4 Público-alvo
+COMO PREENCHER
+Indique quem vai usar este documento: a equipe de desenvolvimento, o cliente (professor) e os avaliadores.
+	
+
+Este documento destina-se ao desenvolvedor, ao professor (cliente) e aos avaliadores da disciplina de Análise de Sistemas.
+2. Descrição geral do sistema
+COMO PREENCHER
+Apresente o sistema em um ou dois parágrafos, em visão de alto nível, antes dos requisitos detalhados: o que ele faz, para quem, qual problema resolve e quais são os principais módulos.
+	
+
+O Sistema de Gestão Escolar será desenvolvido para facilitar a administração acadêmica de uma instituição de ensino.
+O sistema permitirá cadastrar professores, semestres, disciplinas e feriados, gerar automaticamente cronogramas de aulas, calcular o custo das disciplinas com base na carga horária e no valor da hora-aula do professor, além de emitir relatórios administrativos.
+O sistema será desenvolvido para ambiente Web, podendo ser acessado por navegadores modernos.
+
+
+
+
+
+
+3. Stakeholders e atores
+COMO PREENCHER
+Liste quem tem interesse no sistema (stakeholders) e quem interage diretamente com ele (atores).
+Para cada um, diga o tipo (ator ou stakeholder) e qual é o seu papel ou responsabilidade no sistema.
+	Ator / Stakeholder
+	Tipo
+	Papel / responsabilidade
+	Professor
+	Cliente
+	Definir os requisitos e validar o sistema
+	Arthur Dezanet
+	Desenvolvedor
+	Desenvolver, testar e manter o sistema
+	Coordenador
+	Ator
+	Administrar todas as informações do sistema
+	Secretaria
+	Ator
+	Realizar cadastros e consultas
+	4. Requisitos funcionais (RF)
+COMO PREENCHER
+Registre cada função que o sistema deve realizar. Para cada requisito, informe:
+• ID único, no formato RF01, RF02, RF03...
+• Nome iniciado por um verbo: cadastrar, gerar, emitir, autenticar...
+• Descrição clara e verificável (de modo que dê para testar se foi cumprida).
+• Prioridade pelo método MoSCoW: Must, Should, Could ou Won’t.
+	ID
+	Nome
+	Descrição
+	Prioridade
+	RF01
+	Autenticar usuário
+	Permitir login utilizando e-mail e senha.
+	Must
+	RF02
+	Cadastrar professor
+	Cadastrar professores com nome, CPF, telefone, e-mail e valor da hora-aula.
+	Must
+	RF03
+	Cadastrar semestre
+	Registrar semestres com data de início e término.
+	Must
+	RF04
+	Cadastrar disciplina
+	Cadastrar disciplinas vinculadas a um professor e a um semestre.
+	Must
+	RF05
+	Cadastrar feriados
+	Registrar os feriados que afetam o calendário de aulas
+	Must
+	RF06
+	Gerar cronograma
+	Gerar automaticamente o cronograma de aulas considerando feriados.
+	Must
+	5. Requisitos não funcionais (RNF)
+COMO PREENCHER
+Registre as qualidades e restrições de como o sistema funciona — não funções, mas características.
+Pense em categorias como: segurança, desempenho, usabilidade, idioma e compatibilidade. Use IDs no formato RNF01, RNF02...
+	ID
+	Categoria
+	Descrição
+	RNF01
+	Segurança
+	As senhas dos usuários deverão ser armazenadas de forma protegida.
+	RNF02
+	Compatibilidade
+	O sistema deverá funcionar nos principais navegadores da Web.
+	RNF03
+	Idioma
+	Toda a interface deverá estar em Português
+	RNF04
+	Desempenho
+	O sistema deverá responder às operações em até 3 segundos.
+	RNF05
+	Usabilidade
+	A interface deverá ser simples, organizada e de fácil utilização.
+	6. Regras de negócio (RN)
+COMO PREENCHER
+Registre as políticas, cálculos e restrições do domínio que o sistema deve respeitar. Exemplos do que procurar: como um valor é calculado, o que é proibido, o que acontece em uma situação específica.
+Relacione cada regra ao(s) requisito(s) funcional(is) que ela afeta. Use IDs no formato RN01, RN02...
+Atenção: algumas regras importantes não aparecem de imediato — só surgem com boas perguntas ao cliente.
+	ID
+	Descrição da regra
+	RF relacionado
+	RN01
+	O valor total de uma disciplina será calculado pela carga horária multiplicada pelo valor da hora-aula do professor.
+	RF04
+	RN02
+	Caso uma aula seja programada para um feriado, ela deverá ser remarcada automaticamente para a próxima data disponível.
+	RF06
+	RN03
+	Um professor não poderá possuir duas disciplinas marcadas no mesmo dia e horário.
+	RF04 e RF06
+	RN04
+	Toda disciplina deverá estar vinculada obrigatoriamente a um semestre.
+	RF04
+	RN05
+	Um professor que possua disciplinas cadastradas não poderá ser excluído do sistema.
+	RF02
+	RN06
+	Apenas usuários administradores poderão excluir registros do sistema.
+	RF01
+	7. Priorização (MoSCoW)
+COMO PREENCHER
+Explique o critério usado para priorizar os requisitos. A prioridade de cada requisito fica na tabela da Seção 4; aqui você justifica as escolhas e pode resumir o que é essencial.
+	Referência rápida do método:
+Categoria
+	Significado
+	Must (essencial)
+	Sem isso o sistema não cumpre seu propósito.
+	Should (importante)
+	Importante, mas o sistema funciona sem, por ora.
+	Could (desejável)
+	Agrega valor; entra se houver tempo.
+	Won’t (fora de escopo)
+	Reconhecido, mas não será feito nesta versão.
+	
+
+
+
+Para definir a importância de cada funcionalidade foi utilizado o método MoSCoW, classificando os requisitos em essenciais, importantes, desejáveis e fora do escopo.
+Must 
+Login de usuários
+Cadastro de professores
+Cadastro de disciplinas
+Cadastro de semestres
+Cadastro de feriados
+Geração de cronograma
+Should (Importante)
+Emissão de relatórios
+Could (Desejável)
+Exportação para PDF e Excel
+Won't (Fora desta versão)
+Aplicativo para dispositivos móveis
+Integração com sistemas externos
+
+
+8. Restrições e premissas
+COMO PREENCHER
+Restrições: limitações conhecidas que o projeto precisa respeitar (prazo, tecnologia, ambiente de execução).
+Premissas: suposições assumidas pela equipe que, se mudarem, afetam o projeto.
+	
+
+
+
+Restrições:
+O sistema será desenvolvido para ambiente Web.
+Será utilizado banco de dados MySQL ou LocalStorage para armazenamento das informações.
+Apenas usuários cadastrados poderão acessar o sistema.
+O desenvolvimento deverá respeitar o cronograma da disciplina.
+Premissas:
+O professor fornecerá todas as informações necessárias para o desenvolvimento.
+Os usuários terão acesso à internet.
+Os dados cadastrados serão verdadeiros.
+O sistema será utilizado apenas pela instituição de ensino.
+
+
+9. Aprovação do cliente
+COMO PREENCHER
+Depois de validar o documento com o cliente (professor), registre aqui o aceite. Este é o “combinado” formal entre a equipe e o cliente sobre o que será desenvolvido.
+	Cliente
+	Aceite
+	Nome:
+
+
+Função: cliente (professor)
+	(   ) Aprovado
+(   ) Aprovado com ajustes
+(   ) Reprovado
+	Data: ____ / ____ / ______
+	Assinatura:
+	
+
+Análise de Sistemas · Modelo de Documento de Levantamento de Requisitos — Sistema de Gestão Escolar
