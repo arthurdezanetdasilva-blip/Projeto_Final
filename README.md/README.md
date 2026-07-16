@@ -455,4 +455,7 @@ classDiagram
     Turma "1" -- "*" Matricula
     Usuario "1" -- "*" Comunicado
     
-    ![Diagrama de Casos de Uso](diagrmas/Diagrama de sequencia.drawio.png)
+  
+
+
+  ![Diagrama de Casos de Uso](diagrmas/image.png)
