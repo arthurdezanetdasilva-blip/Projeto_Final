@@ -23,7 +23,7 @@
 12. [Diagrama de Casos de Uso](#12-diagrama-de-casos-de-uso)
 13. [Diagrama de Classes](#13-diagrama-de-classes)
 14. [Diagrama de Sequência](#14-diagrama-de-sequência)
-15. [Apresentação Final](#15-apresentação-final)
+
 
 ---
 
