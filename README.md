@@ -290,3 +290,24 @@ Premissas
 
 ---
 
+## 13. Diagrama de Classes
+
+
+ ![Diagrama de Casos de Uso](diagrmas/Diagrama%20classes2.drawio.png)
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+ 14.diagrama de sequencia
+ 
+ ![Diagrama de Casos de Uso](diagrmas/Diagrama%20de%20sequência.drawio%20(1).png)
